@@ -1,0 +1,334 @@
+/* hero attributes */
+.hero-bar-container {
+  border-bottom: 2px solid #2c2e2e;
+  background: linear-gradient(80deg, #252728 0%, #101415 100%);
+  box-shadow: 0px 0px 15px 1px #000;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  justify-content: center;
+  top: 380px;
+  position: relative;
+  width: 100%;
+}
+
+.HA-main-container,
+.HR-main-container,
+.HS-main-container {
+  border-bottom: 1px solid grey;
+  display: flex;
+  flex-direction: column;
+  font-family: trajan pro;
+  height: auto;
+  margin: 5px;
+  max-width: 650px;
+  width: auto;
+}
+
+.HA-main-container > h2,
+.HR-main-container > h2,
+.HS-main-container > h2 {
+  color: #969696;
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 15px;
+}
+
+.HA-inner-div {
+  display: flex;
+  flex-direction: row;
+  height: 140px;
+  justify-content: space-around;
+  padding: 5px;
+  width: 100%;
+}
+
+.HA-icon-div,
+.HA-stats-div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  max-width: 160px;
+  width: 45%;
+}
+
+.HA-image-div {
+  height: auto;
+  width: 100%;
+}
+
+.HA-image-div > img {
+  height: 100%;
+  width: 100%;
+}
+
+.HA-green-bar,
+.HA-blue-bar {
+  text-align: center;
+  text-shadow: 1px 1px 2px #000;
+  width: 100%;
+}
+.HA-green-bar {
+  background: linear-gradient(to right, #286323, #7af03c);
+}
+
+.HA-blue-bar {
+  background: linear-gradient(to right, #1056db, #73f5fe);
+}
+
+.HA-blue-bar > span,
+.HA-green-bar > span {
+  color: rgb(53, 52, 52);
+  font-size: 0.9rem;
+  font-weight: 900;
+  position: absolute;
+  margin-left: 25px;
+}
+
+.HA-inner-div > h1 {
+  color: gainsboro;
+  letter-spacing: 1px;
+  font: normal 1rem trajan pro;
+}
+
+.HA-stats-div > div {
+  display: flex;
+  flex-direction: row;
+  font-family: trajan pro;
+  margin: 5px;
+}
+
+.HA-stats-div > div > img {
+  height: 30px;
+  width: 30px;
+}
+
+.HA-stats-div > div > h1 {
+  font-size: 1.2rem;
+  padding: 5px;
+}
+
+.HA-stats-div > div > h1 > span {
+  color: grey;
+  padding: 5px;
+  font-size: 0.9rem;
+}
+
+/* hero roles */
+.section1,
+.section2,
+.section3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.HR-main-container h1 {
+  font: bold 1rem semplicitapro;
+  margin: 5px;
+  max-width: 200px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  width: 33%;
+}
+
+.section1 > h1 > div,
+.section2 > h1 > div,
+.section3 > h1 > div {
+  background-color: #4c4c4c;
+  height: 7px;
+  width: 100%;
+}
+
+.section1 > h1 > div > div:nth-child(1) {
+  background-color: #fff;
+  box-shadow: 0px 0px 10px #427ed1, 0px 0px 10px #427ed1;
+  height: 7px;
+  width: 30px;
+}
+.section1 > h1:nth-child(2) > div > div,
+.section2 > h1:nth-child(3) > div > div {
+  background-color: #fff;
+  box-shadow: 0px 0px 10px #427ed1, 0px 0px 10px #427ed1;
+  height: 7px;
+  width: 60px;
+}
+.section1 > h1:nth-child(3) > div > div {
+  background-color: #fff;
+  box-shadow: 0px 0px 10px #427ed1, 0px 0px 10px #427ed1;
+  height: 9px;
+  width: 0;
+}
+
+/* hero stats */
+.stat1 {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-family: trajan pro;
+}
+
+.stat1 > div {
+  width: 100%;
+}
+
+.stat1 > div > h1 {
+  color: #969696;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  text-align: center;
+  width: 100%;
+}
+
+.stat1 > div > div {
+  display: flex;
+  flex-direction: row;
+  margin: 3px;
+}
+
+.stat1 > div > div > img {
+  height: 25px;
+  width: 25px;
+  margin-right: 10px;
+}
+
+.stat1 > div > div > h3 {
+  font-size: 0.88rem;
+  padding: 5px;
+}
+
+@media screen and (min-width: 900px) {
+  .hero-bar-container {
+    flex-direction: row;
+    top: 250px;
+  }
+
+  .HA-main-container,
+  .HR-main-container,
+  .HS-main-container {
+    margin: 2px;
+    width: 33%;
+    border-right: 1px solid grey;
+    border-bottom: none;
+    position: relative;
+    height: 200px;
+  }
+
+  .HA-main-container > h2,
+  .HR-main-container > h2,
+  .HS-main-container > h2 {
+    font-size: 1rem;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+  }
+  .HA-stats-div > div > img {
+    height: 25px;
+    width: 25px;
+  }
+  .HA-stats-div > div > h1 {
+    font-size: 0.8rem;
+  }
+  .HA-stats-div > div > h1 > span {
+    font-size: 0.6rem;
+  }
+  .HA-blue-bar,
+  .HA-green-bar {
+    font-size: 0.8rem;
+  }
+  .HA-blue-bar > span,
+  .HA-green-bar > span {
+    font-size: 0.7rem;
+  }
+  .stat1 > div > h1 {
+    font-size: 1rem;
+    padding: 0;
+  }
+  .stat1 > div > div > img {
+    height: 25px;
+    width: 25px;
+  }
+  .stat1 > div > div > h3 {
+    font-size: 0.8rem;
+  }
+  .section1,
+  .section2,
+  .section3 {
+    margin: 3px;
+  }
+  .section1 > h1,
+  .section2 > h1,
+  .section3 > h1 {
+    font-size: 0.7rem;
+    width: 80px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-bar-container {
+    flex-direction: row;
+    top: 200px;
+  }
+
+  .HA-main-container,
+  .HR-main-container,
+  .HS-main-container {
+    margin: 2px;
+    width: 33%;
+    border-right: 1px solid grey;
+    border-bottom: none;
+    position: relative;
+    height: 200px;
+  }
+
+  .HA-main-container > h2,
+  .HR-main-container > h2,
+  .HS-main-container > h2 {
+    font-size: 1rem;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+  }
+  .HA-stats-div > div > img {
+    height: 35px;
+    width: 35px;
+  }
+  .HA-stats-div > div > h1 {
+    font-size: 1.3rem;
+  }
+  .HA-stats-div > div > h1 > span {
+    font-size: 1rem;
+  }
+  .HA-blue-bar,
+  .HA-green-bar {
+    font-size: 0.8rem;
+  }
+  .HA-blue-bar > span,
+  .HA-green-bar > span {
+    font-size: 0.7rem;
+  }
+  .stat1 > div > h1 {
+    font-size: 1rem;
+    padding: 0;
+  }
+  .stat1 > div > div > img {
+    height: 25px;
+    width: 25px;
+  }
+  .stat1 > div > div > h3 {
+    font-size: 0.8rem;
+  }
+  .section1,
+  .section2,
+  .section3 {
+    margin: 3px;
+  }
+  .section1 > h1,
+  .section2 > h1,
+  .section3 > h1 {
+    font-size: 1rem;
+    width: 100%;
+  }
+}

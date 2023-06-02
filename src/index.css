@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "semplicitapro";
+  src: local("semplicitapro"),
+    url("./02-Fonts/SemplicitaPro.otf") format("opentype");
+}
+@font-face {
+  font-family: "semplicitapro";
+  src: local("semplicitapro"),
+    url("./02-Fonts/SemplicitaPro-Bold.otf") format("opentype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "trajan pro";
+  src: local("trajan-pro"), url("./02-Fonts/Trajan-Pro.ttf") format("truetype");
+}

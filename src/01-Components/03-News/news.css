@@ -1,0 +1,219 @@
+.news-header {
+  background: url("../../00-Assets//news_back.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  max-height: 650px;
+  position: absolute;
+  top: 0;
+  transition: 0.3s;
+  width: 100%;
+  z-index: -2;
+}
+
+.gradient-container {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.274) 10%,
+    rgba(0, 0, 0, 0.164) 50%,
+    rgba(0, 0, 0, 0.185) 40%,
+    rgb(0, 0, 0) 95%
+  );
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  margin-bottom: 10px;
+  position: relative;
+  width: 100%;
+}
+
+.gradient-container:hover .headline-container {
+  transform: translateY(-25px);
+}
+
+.headline-container {
+  bottom: 5%;
+  font-family: semplicitapro;
+  padding: 5px;
+  position: absolute;
+  text-transform: uppercase;
+  transition: 0.3s;
+  width: 80%;
+}
+
+/* main content section */
+.news-list-container {
+  align-items: center;
+  background: url("../../00-Assets/bg_repeater-min.jpg");
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  width: 100%;
+}
+
+.news-section-wraper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.buttons-wraper {
+  display: flex;
+  margin-left: 10%;
+  width: 70%;
+}
+
+.news-list-content {
+  box-shadow: 0 0 10px 2px black;
+  height: auto;
+  width: 400px;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid grey;
+}
+.news-list-content:hover {
+  border-bottom: 1px solid rgb(184, 64, 9);
+}
+
+.news-content-image {
+  height: 100%;
+  width: 100%;
+}
+
+.news-content-image > img {
+  height: 100%;
+  width: 100%;
+}
+
+.news-content-info {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.068) 1%,
+    rgba(0, 0, 0, 0.822) 10%,
+    rgb(0, 0, 0) 100%
+  );
+  bottom: -130px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  font-family: semplicitapro;
+  height: 180px;
+  padding: 5px;
+  position: absolute;
+  transition: 0.4s;
+  width: 100%;
+}
+
+.news-content-info:hover {
+  bottom: 0;
+}
+
+.news-content-info > h3 {
+  color: rgb(150, 146, 146);
+  font-size: 0.9rem;
+  padding: 0 5px;
+  text-transform: capitalize;
+}
+.news-content-info > h1 {
+  font-size: 1rem;
+  color: white;
+  padding: 0 5px;
+  text-transform: capitalize;
+}
+.news-content-info > h4 {
+  bottom: 0;
+  color: rgb(150, 146, 146);
+  font-size: 0.8rem;
+  height: 100px;
+  padding: 5px;
+  text-transform: capitalize;
+}
+
+/*button styles */
+.activeLinkButton {
+  background-color: #313131;
+  border-top: 2px solid #646566;
+  color: #fff;
+  height: 50px;
+  font: bold 1rem semplicitapro;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  width: 150px;
+  padding: 10px;
+  margin-left: 15px;
+  text-align: center;
+}
+.activeLinkButton:focus {
+  background-color: #131212;
+}
+
+/* updates container */
+.updates-container {
+  margin: 5px;
+  padding: 5px;
+  width: 100%;
+}
+
+.list-container {
+  background-color: black;
+  border-left: 2px solid rgb(3, 46, 75);
+  color: rgba(255, 255, 255, 0.7);
+  font-family: semplicitapro;
+  padding: 15px;
+  margin-bottom: 5%;
+}
+.list-container > h4 {
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.list-container > h1 {
+  color: white;
+  text-transform: capitalize;
+  padding: 10px;
+}
+
+.list-container > h3 {
+  padding: 10px;
+  font-size: 0.7rem;
+}
+
+.list-container > ul {
+  color: rgba(255, 255, 255, 0.7);
+  margin: 5px;
+  padding-left: 15px;
+  font-size: 0.5rem;
+}
+
+@media screen and (min-width: 700px) {
+  .news-content-info {
+    bottom: -110px;
+  }
+  .news-content-info > h3 {
+    font-size: 1.2rem;
+  }
+  .news-content-info > h1 {
+    font-size: 1.4rem;
+  }
+  .list-container > h1 {
+    font-size: 2rem;
+  }
+  .list-container > h3 {
+    font-size: 1.3rem;
+  }
+  .list-container > ul {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .list-container > h1 {
+    font-size: 2.2rem;
+  }
+  .list-container > h3 {
+    font-size: 1.5rem;
+  }
+  .list-container > ul {
+    font-size: 1.1rem;
+  }
+}

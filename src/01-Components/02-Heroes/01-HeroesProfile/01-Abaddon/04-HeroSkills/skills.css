@@ -1,0 +1,40 @@
+.skillinfo {
+  background: linear-gradient(150deg, #68727c, #14171a);
+  box-shadow: 1px 1px 10px 2px black;
+  bottom: 100px;
+  display: none;
+  position: absolute;
+  transform: translateX(-50%);
+  transition: 0.3s;
+  width: 300px;
+  z-index: 3;
+}
+
+@media screen and (min-width: 600px) {
+  .skillinfo {
+    bottom: 120px;
+    transform: translateX(-80%);
+  }
+}
+@media screen and (min-width: 1300px) {
+  .skillinfo {
+    bottom: 200px;
+    transform: translateX(-80%);
+  }
+}
+
+.skillinfo.show {
+  display: flex;
+  flex-direction: column;
+}
+
+.talentWidth {
+  display: none;
+  padding: 10px;
+  transform: translateX(-70%);
+  width: 520px;
+}
+.talentwidth {
+  display: flex;
+  flex-direction: column;
+}

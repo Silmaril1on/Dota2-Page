@@ -1,0 +1,141 @@
+.heroes-slider-container {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black,
+    black,
+    transparent 100%
+  );
+  overflow: hidden;
+  width: 100%;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 5%,
+    black,
+    black,
+    transparent 95%
+  );
+}
+
+.slider-one,
+.slider-two,
+.slider-three,
+.slider-four,
+.slider-five {
+  animation: move 60s linear infinite;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  width: 6250px;
+}
+
+.slider-one,
+.slider-three,
+.slider-five {
+  animation: left 70s linear infinite;
+}
+
+@keyframes left {
+  0% {
+    transform: translateX(0px);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.slider-two,
+.slider-four {
+  animation: right 70s linear infinite;
+}
+
+@keyframes right {
+  100% {
+    transform: translateX(0px);
+  }
+
+  0% {
+    transform: translateX(-50%);
+  }
+}
+
+.hero-card {
+  height: auto;
+  margin: 5px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.4s;
+  width: 150px;
+}
+
+.hero-card > a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero-card:hover {
+  box-shadow: 0 0 10px 5px black;
+  transform: scale(1.2);
+  z-index: 22;
+}
+
+.hero-card:hover .hero-title {
+  bottom: 0;
+}
+
+.hero-card > a > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  vertical-align: top;
+}
+
+.hero-title {
+  bottom: -25px;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.133) 5%,
+    rgba(0, 0, 0, 0.533) 25%,
+    rgba(0, 0, 0, 0.833) 45%,
+    rgba(0, 0, 0, 1.234) 90%
+  );
+  display: flex;
+  flex-direction: row;
+  height: 25px;
+  position: absolute;
+  transition: 0.4s;
+  width: 100%;
+}
+
+.hero-title > img {
+  height: 20px;
+  width: 20px;
+}
+
+.hero-title > h1 {
+  font: bold 0.8rem trajan pro;
+}
+
+@media screen and (min-width: 900px) {
+  .hero-card {
+    width: 250px;
+  }
+  .hero-title > h1 {
+    font-size: 1.2rem;
+  }
+  .hero-title {
+    bottom: -45px;
+    height: 45px;
+  }
+  .hero-title > img {
+    height: 30px;
+    width: 30px;
+  }
+  .hero-title > h1 {
+    font-size: 1.3rem;
+    padding: 5px;
+  }
+}

@@ -1,0 +1,264 @@
+a {
+  text-decoration: none;
+}
+
+.navigation-bar {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  justify-content: space-between;
+  padding: 10px;
+  width: 100%;
+}
+
+.nav-links {
+  display: flex;
+  font: bold 0.8rem semplicitapro;
+  flex-direction: row;
+  height: 100%;
+  position: relative;
+  text-transform: uppercase;
+  width: 60%;
+}
+
+.nav-links > li {
+  color: gainsboro;
+  cursor: pointer;
+  font-size: 0.5rem;
+  list-style-type: none;
+  letter-spacing: 2px;
+  padding: 5px;
+}
+
+.nav-links > li > a {
+  color: gainsboro;
+  text-decoration: none;
+}
+
+.activeNavLink {
+  border-bottom: 3px solid rgb(184, 64, 9);
+}
+
+.submenu {
+  background-color: rgba(220, 220, 220, 0.233);
+  border: 2px solid grey;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  margin-top: 0;
+  position: absolute;
+  padding: 5px;
+  width: 160px;
+}
+
+.submenu > a {
+  color: gainsboro;
+  font-size: 0.6rem;
+  padding: 5px;
+  text-decoration: none;
+  transition: 0.4s ease;
+}
+
+.submenu > a:hover {
+  transform: translateX(5px);
+}
+
+.user-container {
+  cursor: pointer;
+  color: rgb(168, 162, 162);
+  display: flex;
+  flex-direction: column;
+  font: normal 0.4rem semplicitapro;
+  position: relative;
+  padding: 2px;
+  text-align: right;
+  text-transform: uppercase;
+  width: auto;
+}
+
+.user-container > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+}
+
+.nickname-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.login-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: rgb(168, 162, 162);
+  font: bold 0.7rem semplicitapro;
+  margin-left: 8px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: right;
+}
+.login-button:hover {
+  color: white;
+}
+
+.login-section {
+  align-items: center;
+  background-color: black;
+  border: 2px solid grey;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding: 10px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  text-transform: capitalize;
+  top: 0;
+  width: 350px;
+  z-index: 2222;
+}
+
+.login-section > svg {
+  color: white;
+  height: 25px;
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  width: 25px;
+  transition: 0.4s;
+}
+
+.login-section > svg:hover {
+  transform: rotate(180deg);
+}
+
+.nickName {
+  color: gainsboro;
+  text-transform: capitalize;
+}
+
+.login-section > h1 {
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-inputs {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  padding: 10px;
+  width: 100%;
+}
+
+label,
+input {
+  border: none;
+  border-radius: 5px;
+  font: bold 1rem semplicitapro;
+  letter-spacing: 1px;
+  margin: 5px;
+  box-sizing: border-box;
+  outline: none;
+  padding: 5px;
+  width: 100%;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+  border: 2px solid rgb(184, 64, 9);
+}
+
+.icon > h4 {
+  width: auto;
+}
+
+.icon > svg {
+  color: white;
+  font-size: 0.6rem;
+}
+
+.user-container h4:hover,
+.navigation-bar a:hover {
+  color: white;
+}
+
+.lang {
+  background-color: rgb(26, 25, 25);
+  border: 1px solid grey;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  font: normal 0.7rem semplicitapro;
+  height: 500px;
+  margin-top: 0;
+  position: absolute;
+  text-transform: capitalize;
+  right: 0;
+  width: 300px;
+  z-index: 99;
+}
+
+.lang > div {
+  color: gainsboro;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px;
+  text-align: left;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.lang > div:hover {
+  background-color: grey;
+}
+
+@media screen and (min-width: 550px) {
+  .nav-links > li {
+    font-size: 0.8rem;
+    padding: 10px;
+  }
+  .user-container {
+    margin-top: 5px;
+    padding: 8px;
+  }
+  .user-container h4 {
+    font-size: 0.4rem;
+    letter-spacing: 1px;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .nav-links {
+    width: 50%;
+  }
+  .nav-links > li {
+    font-size: 1.2rem;
+    padding: 15px;
+  }
+  .user-container {
+    width: 200px;
+  }
+  .user-container h4 {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+  }
+  .icon svg {
+    font-size: 0.9rem;
+  }
+}
